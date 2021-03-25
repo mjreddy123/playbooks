@@ -1,0 +1,13 @@
+---
+ - name: create user
+   hosts: all
+   tasks:
+    - name: user creation 
+      user: 
+       name: muni
+       password: muni
+       uid: 1996
+       home: /home/ubuntu/muni
+       comment: " A normal user"
+       shell: /bin/bash
+... 
